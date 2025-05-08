@@ -1,0 +1,242 @@
+/* Container */
+.profile-container {
+    display: flex;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Sidebar */
+  .profile-sidebar {
+    width: 20%;
+    background-color: #f8f8f8;
+    padding: 20px;
+    border-right: 1px solid #ddd;
+  }
+  
+  .profile-sidebar ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .profile-sidebar ul li {
+    display: flex; /* ใช้ Flexbox เพื่อจัดเรียงแนวนอน */
+    align-items: center; /* จัดตำแหน่งแนวตั้งให้ตรงกลาง */
+    padding: 10px 0;
+    color: #333;
+    cursor: pointer;
+  }
+  
+  .profile-sidebar-menu li:last-child {
+    margin-bottom: 20px; /* ให้รายการสุดท้ายมีระยะห่างจากส่วนอื่น */
+  }
+
+  .profile-sidebar ul li.active,
+  .profile-sidebar ul li:hover {
+    color: #FF7043;
+  }
+
+  
+  /* Main Content */
+  .profile-main {
+    flex-grow: 1;
+    padding: 30px;
+  }
+  
+  .profile-main h1 {
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-bottom: 5px;
+    color: #FF7043;
+  }
+  
+  .profile-main p {
+    font-size: 16px;
+    color: #888;
+    margin-bottom: 20px;
+  }
+
+  .icon {
+    width: 20px; /* กำหนดขนาดไอคอน */
+    height: 20px;
+    margin-right: 8px; /* เว้นระยะระหว่างไอคอนกับข้อความ */
+  }  
+  
+  /* Form */
+  .profile-form {
+    max-width: 500px;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .form-group input,
+  .form-group button,
+  .form-group select {
+    width: 100%;
+    padding: 8px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+
+  .header-container {
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .form-group input:disabled {
+    background-color: #f8f8f8;
+  }
+  
+  .date-of-birth {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .saves-btn {
+    background-color: #FF7043;
+    color: white;
+    border: none;
+    padding: 5px 15px; /* ลดระยะห่าง */
+    font-size: 15px;   /* ลดขนาดตัวอักษร */
+    border-radius: 10px; /* (โค้งมนเล็กลง) */
+    cursor: pointer;
+  }
+  
+  .saves-btn:hover {
+    background-color: #f7a086;
+  }
+
+  .cancel-btn {
+    background-color: #dbdad9;
+    color: black;
+    border: none;
+    padding: 5px 15px; /* ลดระยะห่าง */
+    font-size: 15px;   /* ลดขนาดตัวอักษร */
+    border-radius: 10px; /* (โค้งมนเล็กลง) */
+    cursor: pointer;
+  }
+  
+  .cancel-btn:hover {
+    background-color: #f7a086;
+  }
+
+  .address-container {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.address-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.address-card {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 15px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.address-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.address-info h4 {
+    margin: 0 0 10px;
+    font-size: 18px;
+    color: #333;
+}
+
+.address-info p {
+    margin: 5px 0;
+    color: #555;
+}
+
+.address-actions {
+    margin-top: 15px;
+    display: flex;
+    gap: 10px;
+}
+
+.default-btn,
+.edit-btn,
+.delete-btn {
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.default-btn {
+    background-color: #007bff;
+    color: white;
+}
+
+.default-btn.active {
+    background-color: #28a745;
+}
+
+.default-btn:hover {
+    background-color: #0056b3;
+}
+
+.edit-btn {
+    background-color: #ffc107;
+    color: white;
+}
+
+.edit-btn:hover {
+    background-color: #e0a800;
+}
+
+.delete-btn {
+    background-color: #dc3545;
+    color: white;
+}
+
+.delete-btn:hover {
+    background-color: #c82333;
+}
+
+.no-address {
+    text-align: center;
+    color: #777;
+    font-size: 16px;
+}
+
+.modal-content {
+  font-family: 'Arial', sans-serif;
+}
+
+.modal-header, .modal-footer {
+  border: none;
+  text-align: center;
+}
+
+.modal-footer button {
+  font-size: 16px;
+  padding: 12px 30px;
+  border-radius: 30px;
+  transition: background-color 0.3s;
+}
+
+.modal-footer button:hover {
+  background-color: #ff6f61;
+}
+

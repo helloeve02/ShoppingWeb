@@ -1,0 +1,87 @@
+/* Container */
+.profile-container {
+    display: grid;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Sidebar */
+  .profile-sidebar {
+    width: 20vw;
+    background-color: #f8f8f8;
+    padding: 20px;
+    border-right: 1px solid #ddd;
+  }
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: 20vw auto auto;
+  }
+  
+  
+  .profile-sidebar  {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .profile-sidebar {
+    display: flex; /* ใช้ Flexbox เพื่อจัดเรียงแนวนอน */
+    align-items: center; /* จัดตำแหน่งแนวตั้งให้ตรงกลาง */
+    padding: 10px 0;
+    color: #333;
+    cursor: pointer;
+  }
+  
+  .profile-sidebar-menu {
+    margin-bottom: 20px; /* ให้รายการสุดท้ายมีระยะห่างจากส่วนอื่น */
+  }
+
+  .profile-sidebar-menu .active,
+  .profile-sidebar-menu :hover {
+    color: #FF7043;
+  }
+
+  
+  /* Main Content */
+  .profile-main {
+    flex-grow: 1;
+    padding: 20px;
+  }
+  
+  .profile-main h1 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-bottom: 5px;
+    color: #FF7043;
+  }
+  
+  .profile-main p {
+    font-size: 16px;
+    color: #888;
+    margin-bottom: 20px;
+  }
+
+  .menu-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.menu-item {
+    display: flex;
+    align-items: center;
+}
+
+.menu-link {
+    text-decoration: none;
+    color: #333;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.menu-link:hover {
+    color: #FF7043;
+}

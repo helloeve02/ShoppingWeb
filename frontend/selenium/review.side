@@ -1,0 +1,562 @@
+{
+  "id": "5a003717-31fd-445b-ba86-e036ba59c9d4",
+  "version": "2.0",
+  "name": "Review",
+  "url": "http://localhost:5173",
+  "tests": [{
+    "id": "74af0e9a-5911-4473-a526-881461895919",
+    "name": "Test_AllPass",
+    "commands": [{
+      "id": "623184cc-72e6-4267-ac6e-d8ab27ecf253",
+      "comment": "",
+      "command": "open",
+      "target": "/orders",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3a78dc77-7f40-437f-97a9-6c435b99d0dd",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "782x823",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "55ca46b1-fd65-4496-a752-77a988966566",
+      "comment": "",
+      "command": "click",
+      "target": "css=.min-h-\\[3vh\\]",
+      "targets": [
+        ["css=.min-h-\\[3vh\\]", "css:finder"],
+        ["xpath=//div[@id='root']/div/main/div/div[2]/div/div/div[4]/div/button", "xpath:idRelative"],
+        ["xpath=//div[4]/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Rate')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "56db3ad6-acb9-4bdb-8855-ab9ad2e1476d",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "linkText=Careers",
+      "targets": [
+        ["linkText=Careers", "linkText"],
+        ["css=div:nth-child(2) > .space-y-3 > .block:nth-child(2)", "css:finder"],
+        ["xpath=//a[contains(text(),'Careers')]", "xpath:link"],
+        ["xpath=//div[@id='root']/div/footer/div/div/div[2]/div/a[2]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/careers')]", "xpath:href"],
+        ["xpath=//div[2]/div/a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,'Careers')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "cd26d0de-656d-4935-ab94-44e51bf28e36",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "linkText=Careers",
+      "targets": [
+        ["linkText=Careers", "linkText"],
+        ["css=div:nth-child(2) > .space-y-3 > .block:nth-child(2)", "css:finder"],
+        ["xpath=//a[contains(text(),'Careers')]", "xpath:link"],
+        ["xpath=//div[@id='root']/div/footer/div/div/div[2]/div/a[2]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/careers')]", "xpath:href"],
+        ["xpath=//div[2]/div/a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,'Careers')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "da2f395c-c384-41e5-aada-b72307754244",
+      "comment": "",
+      "command": "click",
+      "target": "css=.bg-white:nth-child(2) .bg-orange-600",
+      "targets": [
+        ["css=.bg-white:nth-child(2) .bg-orange-600", "css:finder"],
+        ["xpath=//div[@id='root']/div/main/div/div/div[2]/div/div/div[2]/div[4]/div[2]/button", "xpath:idRelative"],
+        ["xpath=//div[2]/div[4]/div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Rate')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "98edfe2a-997f-465c-9760-6c8d27935c75",
+      "comment": "",
+      "command": "click",
+      "target": "id=reviewForm_review",
+      "targets": [
+        ["id=reviewForm_review", "id"],
+        ["css=#reviewForm_review", "css:finder"],
+        ["xpath=//textarea[@id='reviewForm_review']", "xpath:attributes"],
+        ["xpath=//form[@id='reviewForm']/div/div/div[2]/div/div/textarea", "xpath:idRelative"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "557d047f-61b9-4c7e-9c8d-9f4ef88dfe8b",
+      "comment": "",
+      "command": "type",
+      "target": "id=reviewForm_review",
+      "targets": [
+        ["id=reviewForm_review", "id"],
+        ["css=#reviewForm_review", "css:finder"],
+        ["xpath=//textarea[@id='reviewForm_review']", "xpath:attributes"],
+        ["xpath=//form[@id='reviewForm']/div/div/div[2]/div/div/textarea", "xpath:idRelative"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": "Good"
+    }, {
+      "id": "dfbda7e7-79ea-4250-b120-44c0f7423705",
+      "comment": "",
+      "command": "clickAt",
+      "target": "id=rating",
+      "targets": [
+        ["css=.ant-rate-star-full .ant-rate-star-first path", "css:finder"]
+      ],
+      "value": "1"
+    }, {
+      "id": "4e9a659a-c6ba-4cca-8d7b-eb4b59f9beea",
+      "comment": "",
+      "command": "type",
+      "target": "id=image",
+      "targets": [],
+      "value": "D:\\Year3\\SE\\Project\\team17\\frontend\\src\\assets\\promo.jpg"
+    }, {
+      "id": "1ea959e7-f6e1-4142-a032-2617136adbec",
+      "comment": "",
+      "command": "clickAt",
+      "target": "css=.ant-btn-primary",
+      "targets": [
+        ["css=.ant-btn-primary", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//form[@id='reviewForm']/div[4]/div/div/div/div/button", "xpath:idRelative"],
+        ["xpath=//div[4]/div/div/div/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Submit Review')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "02998062-f3f3-414d-83dd-c43aa4fac3c3",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.ant-message-custom-content > span:nth-child(2)",
+      "targets": [
+        ["css=.ant-message-custom-content > span:nth-child(2)", "css:finder"],
+        ["xpath=//div[4]/div/div/div/div/span[2]", "xpath:position"],
+        ["xpath=//span[contains(.,'Review submitted successfully!')]", "xpath:innerText"]
+      ],
+      "value": "Review submitted successfully!"
+    }]
+  }, {
+    "id": "3bbb4693-9312-4f95-b904-abc16cf38fd4",
+    "name": "Test_DescriptionFail",
+    "commands": [{
+      "id": "c98f15ff-ef75-4420-9ee8-6a8b8ecf0e42",
+      "comment": "",
+      "command": "open",
+      "target": "/orders",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3c97acef-fd53-4a82-b580-fe7e6cbd5be3",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "782x823",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ff661509-b2c0-40cb-8a58-7f6dc46fa784",
+      "comment": "",
+      "command": "click",
+      "target": "css=.min-h-\\[3vh\\]",
+      "targets": [
+        ["css=.min-h-\\[3vh\\]", "css:finder"],
+        ["xpath=//div[@id='root']/div/main/div/div[2]/div/div/div[4]/div/button", "xpath:idRelative"],
+        ["xpath=//div[4]/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Rate')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a7c08311-285f-417c-8045-407f1d156683",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "linkText=Careers",
+      "targets": [
+        ["linkText=Careers", "linkText"],
+        ["css=div:nth-child(2) > .space-y-3 > .block:nth-child(2)", "css:finder"],
+        ["xpath=//a[contains(text(),'Careers')]", "xpath:link"],
+        ["xpath=//div[@id='root']/div/footer/div/div/div[2]/div/a[2]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/careers')]", "xpath:href"],
+        ["xpath=//div[2]/div/a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,'Careers')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "801f9313-7541-4fb8-b266-169138383b7e",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "linkText=Careers",
+      "targets": [
+        ["linkText=Careers", "linkText"],
+        ["css=div:nth-child(2) > .space-y-3 > .block:nth-child(2)", "css:finder"],
+        ["xpath=//a[contains(text(),'Careers')]", "xpath:link"],
+        ["xpath=//div[@id='root']/div/footer/div/div/div[2]/div/a[2]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/careers')]", "xpath:href"],
+        ["xpath=//div[2]/div/a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,'Careers')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "37774149-c406-4b3a-969d-b0e8eebfa91e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.bg-white:nth-child(2) .bg-orange-600",
+      "targets": [
+        ["css=.bg-white:nth-child(2) .bg-orange-600", "css:finder"],
+        ["xpath=//div[@id='root']/div/main/div/div/div[2]/div/div/div[2]/div[4]/div[2]/button", "xpath:idRelative"],
+        ["xpath=//div[2]/div[4]/div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Rate')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ee2dfdd6-fc17-4845-8365-890c98a102ac",
+      "comment": "",
+      "command": "click",
+      "target": "id=reviewForm_review",
+      "targets": [
+        ["id=reviewForm_review", "id"],
+        ["css=#reviewForm_review", "css:finder"],
+        ["xpath=//textarea[@id='reviewForm_review']", "xpath:attributes"],
+        ["xpath=//form[@id='reviewForm']/div/div/div[2]/div/div/textarea", "xpath:idRelative"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4527c1bc-cd39-40a4-9129-25b081970bd5",
+      "comment": "",
+      "command": "type",
+      "target": "id=reviewForm_review",
+      "targets": [
+        ["id=reviewForm_review", "id"],
+        ["css=#reviewForm_review", "css:finder"],
+        ["xpath=//textarea[@id='reviewForm_review']", "xpath:attributes"],
+        ["xpath=//form[@id='reviewForm']/div/div/div[2]/div/div/textarea", "xpath:idRelative"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b803a117-9ead-4fd6-94e7-b59b887e2ffe",
+      "comment": "",
+      "command": "clickAt",
+      "target": "id=rating",
+      "targets": [
+        ["css=.ant-rate-star-full .ant-rate-star-first path", "css:finder"]
+      ],
+      "value": "1"
+    }, {
+      "id": "824b62e1-ec02-45ce-8f69-80e2a58fd117",
+      "comment": "",
+      "command": "type",
+      "target": "id=image",
+      "targets": [],
+      "value": "D:\\Year3\\SE\\Project\\team17\\frontend\\src\\assets\\promo.jpg"
+    }, {
+      "id": "6ea136b8-ce16-482f-a4df-ab82f9db7191",
+      "comment": "",
+      "command": "clickAt",
+      "target": "css=.ant-btn-primary",
+      "targets": [
+        ["css=.ant-btn-primary", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//form[@id='reviewForm']/div[4]/div/div/div/div/button", "xpath:idRelative"],
+        ["xpath=//div[4]/div/div/div/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Submit Review')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f264d8de-778f-492a-8d2a-3e6b6b32e718",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.ant-message-custom-content > span:nth-child(2)",
+      "targets": [
+        ["css=.ant-message-custom-content > span:nth-child(2)", "css:finder"],
+        ["xpath=//div[5]/div/div/div/div/span[2]", "xpath:position"],
+        ["xpath=//span[contains(.,'Review submitted failed!')]", "xpath:innerText"]
+      ],
+      "value": "Review submitted failed!"
+    }]
+  }, {
+    "id": "0a563663-4f54-48d7-8c63-78d4d5d66983",
+    "name": "Test_RatingFail",
+    "commands": [{
+      "id": "7d14d0d1-a47d-4d91-a09f-7b16c85ff4fa",
+      "comment": "",
+      "command": "open",
+      "target": "/orders",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4d5c668a-d9f4-437c-97a4-7c6daaadcc11",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "782x823",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3c474b41-f947-49e1-9355-0bc8aee4495c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.min-h-\\[3vh\\]",
+      "targets": [
+        ["css=.min-h-\\[3vh\\]", "css:finder"],
+        ["xpath=//div[@id='root']/div/main/div/div[2]/div/div/div[4]/div/button", "xpath:idRelative"],
+        ["xpath=//div[4]/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Rate')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c07b0f80-e03c-4edf-9d0e-441e74ce0e2c",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "linkText=Careers",
+      "targets": [
+        ["linkText=Careers", "linkText"],
+        ["css=div:nth-child(2) > .space-y-3 > .block:nth-child(2)", "css:finder"],
+        ["xpath=//a[contains(text(),'Careers')]", "xpath:link"],
+        ["xpath=//div[@id='root']/div/footer/div/div/div[2]/div/a[2]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/careers')]", "xpath:href"],
+        ["xpath=//div[2]/div/a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,'Careers')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "fb30a659-8f4f-4afb-ac99-1a30dfe6ebd1",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "linkText=Careers",
+      "targets": [
+        ["linkText=Careers", "linkText"],
+        ["css=div:nth-child(2) > .space-y-3 > .block:nth-child(2)", "css:finder"],
+        ["xpath=//a[contains(text(),'Careers')]", "xpath:link"],
+        ["xpath=//div[@id='root']/div/footer/div/div/div[2]/div/a[2]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/careers')]", "xpath:href"],
+        ["xpath=//div[2]/div/a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,'Careers')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ef7b9c0d-3a74-46a5-90f0-4e94121424c5",
+      "comment": "",
+      "command": "click",
+      "target": "css=.bg-white:nth-child(2) .bg-orange-600",
+      "targets": [
+        ["css=.bg-white:nth-child(2) .bg-orange-600", "css:finder"],
+        ["xpath=//div[@id='root']/div/main/div/div/div[2]/div/div/div[2]/div[4]/div[2]/button", "xpath:idRelative"],
+        ["xpath=//div[2]/div[4]/div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Rate')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d806dcdf-ab8c-4434-8c19-a8dcf1598e79",
+      "comment": "",
+      "command": "click",
+      "target": "id=reviewForm_review",
+      "targets": [
+        ["id=reviewForm_review", "id"],
+        ["css=#reviewForm_review", "css:finder"],
+        ["xpath=//textarea[@id='reviewForm_review']", "xpath:attributes"],
+        ["xpath=//form[@id='reviewForm']/div/div/div[2]/div/div/textarea", "xpath:idRelative"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8fc33489-76cc-46ab-93c4-241ca85dfb76",
+      "comment": "",
+      "command": "type",
+      "target": "id=reviewForm_review",
+      "targets": [
+        ["id=reviewForm_review", "id"],
+        ["css=#reviewForm_review", "css:finder"],
+        ["xpath=//textarea[@id='reviewForm_review']", "xpath:attributes"],
+        ["xpath=//form[@id='reviewForm']/div/div/div[2]/div/div/textarea", "xpath:idRelative"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": "Good"
+    }, {
+      "id": "3114bb1c-b0ff-4aca-985b-831610e73ec7",
+      "comment": "",
+      "command": "clickAt",
+      "target": "css=.ant-rate-star-full .ant-rate-star-first path",
+      "targets": [
+        ["css=.ant-rate-star-full .ant-rate-star-first path", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "53115074-f9a7-49cb-94ff-26eb8db9db74",
+      "comment": "",
+      "command": "type",
+      "target": "id=image",
+      "targets": [],
+      "value": "D:\\Year3\\SE\\Project\\team17\\frontend\\src\\assets\\promo.jpg"
+    }, {
+      "id": "fe882c47-f761-467d-8123-c532da5ca5f4",
+      "comment": "",
+      "command": "clickAt",
+      "target": "css=.ant-btn-primary",
+      "targets": [
+        ["css=.ant-btn-primary", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//form[@id='reviewForm']/div[4]/div/div/div/div/button", "xpath:idRelative"],
+        ["xpath=//div[4]/div/div/div/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Submit Review')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "12d30d1f-18cd-4332-b256-e40cb2947149",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.ant-message-custom-content > span:nth-child(2)",
+      "targets": [
+        ["css=.ant-message-custom-content > span:nth-child(2)", "css:finder"],
+        ["xpath=//div[5]/div/div/div/div/span[2]", "xpath:position"],
+        ["xpath=//span[contains(.,'Please write a review and select a rating.')]", "xpath:innerText"]
+      ],
+      "value": "Please write a review and select a rating."
+    }]
+  }, {
+    "id": "d428b54d-c8c5-4dcc-a295-d7f64a12c613",
+    "name": "Test_imageFail",
+    "commands": [{
+      "id": "4008e3e0-6c89-4a8c-8e05-793c963260aa",
+      "comment": "",
+      "command": "open",
+      "target": "/orders",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7ee55470-9120-4ac0-a118-071af50b971f",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "782x823",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "109ec15f-be92-41ec-b89a-e457ad1d3ef1",
+      "comment": "",
+      "command": "click",
+      "target": "css=.min-h-\\[3vh\\]",
+      "targets": [
+        ["css=.min-h-\\[3vh\\]", "css:finder"],
+        ["xpath=//div[@id='root']/div/main/div/div[2]/div/div/div[4]/div/button", "xpath:idRelative"],
+        ["xpath=//div[4]/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Rate')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "971d2ab9-326f-4cb8-a4fe-b9178ea4fb61",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "linkText=Careers",
+      "targets": [
+        ["linkText=Careers", "linkText"],
+        ["css=div:nth-child(2) > .space-y-3 > .block:nth-child(2)", "css:finder"],
+        ["xpath=//a[contains(text(),'Careers')]", "xpath:link"],
+        ["xpath=//div[@id='root']/div/footer/div/div/div[2]/div/a[2]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/careers')]", "xpath:href"],
+        ["xpath=//div[2]/div/a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,'Careers')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c3acd441-0448-4222-ab11-d5f7e4904b08",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "linkText=Careers",
+      "targets": [
+        ["linkText=Careers", "linkText"],
+        ["css=div:nth-child(2) > .space-y-3 > .block:nth-child(2)", "css:finder"],
+        ["xpath=//a[contains(text(),'Careers')]", "xpath:link"],
+        ["xpath=//div[@id='root']/div/footer/div/div/div[2]/div/a[2]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/careers')]", "xpath:href"],
+        ["xpath=//div[2]/div/a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,'Careers')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d8949fb5-e435-4224-9304-75ceb1abee28",
+      "comment": "",
+      "command": "click",
+      "target": "css=.bg-white:nth-child(2) .bg-orange-600",
+      "targets": [
+        ["css=.bg-white:nth-child(2) .bg-orange-600", "css:finder"],
+        ["xpath=//div[@id='root']/div/main/div/div/div[2]/div/div/div[2]/div[4]/div[2]/button", "xpath:idRelative"],
+        ["xpath=//div[2]/div[4]/div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Rate')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "4596b702-8016-4d81-8c01-41711b5c76e4",
+      "comment": "",
+      "command": "click",
+      "target": "id=reviewForm_review",
+      "targets": [
+        ["id=reviewForm_review", "id"],
+        ["css=#reviewForm_review", "css:finder"],
+        ["xpath=//textarea[@id='reviewForm_review']", "xpath:attributes"],
+        ["xpath=//form[@id='reviewForm']/div/div/div[2]/div/div/textarea", "xpath:idRelative"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "94c1acfc-a151-435b-a066-a79dff7df9b3",
+      "comment": "",
+      "command": "type",
+      "target": "id=reviewForm_review",
+      "targets": [
+        ["id=reviewForm_review", "id"],
+        ["css=#reviewForm_review", "css:finder"],
+        ["xpath=//textarea[@id='reviewForm_review']", "xpath:attributes"],
+        ["xpath=//form[@id='reviewForm']/div/div/div[2]/div/div/textarea", "xpath:idRelative"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": "Good"
+    }, {
+      "id": "17787d26-fff9-4d13-ad30-50ee74220f90",
+      "comment": "",
+      "command": "clickAt",
+      "target": "id=rating",
+      "targets": [
+        ["css=.ant-rate-star-full .ant-rate-star-first path", "css:finder"]
+      ],
+      "value": "1"
+    }, {
+      "id": "719ea879-54fd-49f0-8d9e-afe742145ac5",
+      "comment": "",
+      "command": "clickAt",
+      "target": "css=.ant-btn-primary",
+      "targets": [
+        ["css=.ant-btn-primary", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//form[@id='reviewForm']/div[4]/div/div/div/div/button", "xpath:idRelative"],
+        ["xpath=//div[4]/div/div/div/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Submit Review')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b4568d1a-1f67-4a05-9c58-e95668da1dfb",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.ant-message-custom-content > span:nth-child(2)",
+      "targets": [
+        ["css=.ant-message-custom-content > span:nth-child(2)", "css:finder"],
+        ["xpath=//div[5]/div/div/div/div/span[2]", "xpath:position"],
+        ["xpath=//span[contains(.,'Review submitted failed!')]", "xpath:innerText"]
+      ],
+      "value": "Review submitted failed!"
+    }]
+  }],
+  "suites": [{
+    "id": "d72818d9-a28f-4714-9d27-17c8fd0caeb7",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["74af0e9a-5911-4473-a526-881461895919"]
+  }],
+  "urls": ["http://localhost:5173/"],
+  "plugins": []
+}

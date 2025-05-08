@@ -1,0 +1,30 @@
+.my-custom-menu .ant-menu-item {
+  background-color: #ffffff; /* สีพื้นหลังปกติ */
+  color: rgb(76, 72, 72) !important; /* สีข้อความ */
+}
+
+.my-custom-menu .ant-menu-item-selected {
+  background-color: #ffffff !important; /* สีเมื่อเมนูถูกเลือก */
+}
+
+.my-custom-menu .ant-menu-item:hover {
+  background-color: #feded2 !important; /* สีเมื่อเมาส์ชี้ */
+}
+
+button:focus, button:active {
+  outline: none;
+}
+
+
+.orange-button {
+  background-color: rgb(255, 101, 40);
+  border-color: rgb(255, 101, 40);
+  color: white; /* Text color */
+}
+
+.orange-button:hover {
+  background-color: rgb(255, 42, 0) !important;
+  border-color: rgb(255, 42, 0) !important;
+}
+
+

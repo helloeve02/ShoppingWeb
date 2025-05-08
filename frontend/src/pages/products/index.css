@@ -1,0 +1,25 @@
+.star {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background-color: transparent;
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+  }
+  
+  .full-star {
+    background-color: #fbbf24; /* สีเหลือง */
+  }
+  
+  .half-star {
+    background: linear-gradient(
+      to right,
+      #fbbf24 50%, /* สีเหลืองครึ่งหนึ่ง */
+      #e5e7eb 50% /* สีเทาอีกครึ่ง */
+    );
+  }
+  
+  .empty-star {
+    background-color: #e5e7eb; /* สีเทา */
+  }
+  
+  

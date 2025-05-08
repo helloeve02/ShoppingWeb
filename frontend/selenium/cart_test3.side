@@ -1,0 +1,149 @@
+{
+  "id": "455b0baf-7720-4f10-a7f5-17f79218f4c5",
+  "version": "2.0",
+  "name": "cart",
+  "url": "http://localhost:5173/cart",
+  "tests": [{
+    "id": "e35b69ee-3a5c-4fcd-98bd-5c9237b49e4d",
+    "name": "เลือก 1 อัน",
+    "commands": [{
+      "id": "9226f939-57b6-4fd8-92fd-b1b16f8913a8",
+      "comment": "",
+      "command": "open",
+      "target": "/cart",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "33fc2360-1800-4f78-a370-c1d7e46bdfb2",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "788x816",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6e60b048-98a7-4385-ad0d-f9001b1170ad",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ant-card:nth-child(1) > .ant-card-body > .flex .ant-checkbox-input",
+      "targets": [
+        ["css=.ant-card:nth-child(1) > .ant-card-body > .flex .ant-checkbox-input", "css:finder"],
+        ["xpath=//input[@type='checkbox']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/main/div/div/div/div/div/div/label/span/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "68edf1a2-d8cc-46cf-9e2f-d6c5abb1e2af",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ant-btn-primary > span",
+      "targets": [
+        ["css=.ant-btn-primary > span", "css:finder"],
+        ["xpath=//div[@id='root']/div/main/div/div/div[2]/div[2]/div[2]/button/span", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/button/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Checkout')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "fbe0aa77-8d4b-4b1a-aec0-b22db5158ce0",
+    "name": "เลือก 2 อัน",
+    "commands": [{
+      "id": "0348fdb8-2812-49cd-b073-66bf93a002ed",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:5173/cart",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f296eb51-2d20-4f70-9567-9c44b9cf1f6e",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "788x816",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "bd5f1d63-eb0c-46b2-ac48-edbc78120ccc",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ant-card:nth-child(1) > .ant-card-body > .flex .ant-checkbox-input",
+      "targets": [
+        ["css=.ant-card:nth-child(1) > .ant-card-body > .flex .ant-checkbox-input", "css:finder"],
+        ["xpath=//input[@type='checkbox']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/main/div/div/div/div/div/div/label/span/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "12e6ca01-babd-4a99-8a41-0df6e067f99b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ant-card:nth-child(2) .ant-checkbox-input",
+      "targets": [
+        ["css=.ant-card:nth-child(2) .ant-checkbox-input", "css:finder"],
+        ["xpath=(//input[@type='checkbox'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/main/div/div/div/div[2]/div/div/label/span/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/label/span/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d29fd64f-416b-4356-b6a0-58da66e72f33",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ant-btn-primary > span",
+      "targets": [
+        ["css=.ant-btn-primary > span", "css:finder"],
+        ["xpath=//div[@id='root']/div/main/div/div/div[2]/div[2]/div[2]/button/span", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/button/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Checkout')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "bfe243bb-c460-4972-b4e6-c9a49ce12fc7",
+    "name": "ลบสินค้า",
+    "commands": [{
+      "id": "ad8fe2cd-b604-4e9c-8010-5132b30af9a5",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:5173/cart",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9592cc79-9e09-415b-a032-8224bb4f974b",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "788x816",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "619f3832-4333-41e3-b6a7-d74ac5a696a0",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ant-card:nth-child(1) > .ant-card-body:nth-child(1) > .flex:nth-child(1) .ant-space-item:nth-child(3) svg:nth-child(1)",
+      "targets": [
+        ["css=.ant-card:nth-child(1) > .ant-card-body:nth-child(1) > .flex:nth-child(1) .ant-space-item:nth-child(3) svg:nth-child(1)", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "de0e8a61-39eb-494a-8e7f-73219ba3add0",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ant-card:nth-child(1) > .ant-card-body > .flex .flex svg",
+      "targets": [
+        ["css=.ant-card:nth-child(1) > .ant-card-body > .flex .flex svg", "css:finder"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "e1fe7676-7012-4890-96fc-3888692e3894",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["e35b69ee-3a5c-4fcd-98bd-5c9237b49e4d"]
+  }],
+  "urls": ["http://localhost:5173/", "http://localhost:5173/cart"],
+  "plugins": []
+}

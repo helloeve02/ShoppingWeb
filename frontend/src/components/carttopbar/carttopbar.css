@@ -1,0 +1,60 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .navbarcart {
+    width: 100%;
+    height: 70px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    position: fixed; /* ทำให้ navbar อยู่ติดกับขอบจอด้านบน */
+    top: 0;
+    left: 0;
+    z-index: 1000; /* เพื่อให้ navbar อยู่เหนือเนื้อหาอื่น */
+  }
+  
+  .navbar-logo {
+    display: flex;
+    align-items: center;
+  }
+  
+  .navbar-logo img {
+    height: 150px; /* กำหนดขนาดของโลโก้ */
+    margin-right: 10px;
+    margin-top: 30px;
+  }
+  
+  .navbar-rightcart {
+    display: flex;
+    align-items: center;
+  }
+  
+  .navbar-help-center {
+    color: #FF7043;
+    text-decoration: none;
+    font-size: 16px;
+  }
+  
+  .navbar-help-center:hover {
+    text-decoration: underline;
+  }
+  
+  .search-barcart {
+    padding: 8px;
+    width: 300px;
+    border: 2px solid #FF7F50; /* เพิ่มกรอบสีส้ม */
+    border-radius: 5px;
+    padding-left: 30px; /* เพิ่มพื้นที่ให้ไอคอน */
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" fill="%23FFA500" viewBox="0 0 24 24" width="16px" height="16px"><path d="M10 2C5.589 2 2 5.589 2 10c0 4.411 3.589 8 8 8 1.748 0 3.362-.574 4.68-1.539l5.215 5.214c.392.392.902.587 1.414.587s1.022-.195 1.414-.587c.781-.78.781-2.048 0-2.828l-5.214-5.215C17.426 13.362 18 11.748 18 10c0-4.411-3.589-8-8-8zm0 2c3.309 0 6 2.691 6 6s-2.691 6-6 6-6-2.691-6-6 2.691-6 6-6z"/></svg>');
+    background-repeat: no-repeat;
+    background-position: 8px center; /* ตำแหน่งของไอคอน */
+    outline: none;
+    margin-left: 30px;
+  }
+  

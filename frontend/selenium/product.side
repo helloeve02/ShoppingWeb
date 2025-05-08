@@ -1,0 +1,284 @@
+{
+  "id": "7a5dc775-f024-44dd-b5ab-425a460e5e3b",
+  "version": "2.0",
+  "name": "UAT Product",
+  "url": "http://localhost:5173",
+  "tests": [{
+    "id": "1408af08-19b3-408b-ae1b-d8f5dac9a122",
+    "name": "Success Case",
+    "commands": [{
+      "id": "04c33a63-934e-4661-8408-fed07a739071",
+      "comment": "",
+      "command": "open",
+      "target": "/products/create",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b9ed4155-b0ce-4c56-9e88-5b2f793129e0",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1113x1019",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c99b8c00-21d7-467c-99c8-468c971b0d3d",
+      "comment": "",
+      "command": "type",
+      "target": "id=image",
+      "targets": [
+        ["id=description", "id"],
+        ["css=#description", "css:finder"],
+        ["xpath=//textarea[@id='description']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/main/div/div/div/form/div[2]/div[5]/div/div[2]/div/div/span/textarea", "xpath:idRelative"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": "C:\\Users\\umdan\\team17\\frontend\\src\\assets\\promo.jpg"
+    }, {
+      "id": "7c97dcd7-44d9-4158-b2ab-74aa228d09c5",
+      "comment": "",
+      "command": "click",
+      "target": "id=categoryID",
+      "targets": [
+        ["id=categoryID", "id"],
+        ["css=#categoryID", "css:finder"],
+        ["xpath=//input[@id='categoryID']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/main/div/div/div/form/div[2]/div[3]/div/div[2]/div/div/div/div/span/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div[2]/div/div/div/div/span/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "968bff9c-3c50-4aae-a52e-660a7df79a81",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ant-select-item-option-active",
+      "targets": [
+        ["css=.ant-select-item-option-active", "css:finder"],
+        ["xpath=//div/div/div[5]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "500a5fbd-a3f8-4627-9dc1-cdba40b40631",
+      "comment": "",
+      "command": "click",
+      "target": "css=.flex-grow",
+      "targets": [
+        ["css=.flex-grow", "css:finder"],
+        ["xpath=//div[@id='root']/div/main", "xpath:idRelative"],
+        ["xpath=//main", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "dce9ac1e-2446-418c-b283-fc32dc575bed",
+      "comment": "",
+      "command": "type",
+      "target": "id=product_name",
+      "targets": [
+        ["id=product_name", "id"],
+        ["css=#product_name", "css:finder"],
+        ["xpath=//input[@id='product_name']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/main/div/div/div/form/div[2]/div[2]/div/div[2]/div/div/span/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/span/input", "xpath:position"]
+      ],
+      "value": "Nike Air Force 1"
+    }, {
+      "id": "f7f4490e-75d1-46c2-91a3-78583e1cc4c2",
+      "comment": "",
+      "command": "type",
+      "target": "id=description",
+      "targets": [
+        ["id=description", "id"],
+        ["css=#description", "css:finder"],
+        ["xpath=//textarea[@id='description']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/main/div/div/div/form/div[2]/div[5]/div/div[2]/div/div/span/textarea", "xpath:idRelative"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": "This is Nike shoes"
+    }, {
+      "id": "3e262ec4-221b-449d-a4ee-1de41c28d18f",
+      "comment": "",
+      "command": "type",
+      "target": "id=price",
+      "targets": [
+        ["id=price", "id"],
+        ["css=#price", "css:finder"],
+        ["xpath=//input[@id='price']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/main/div/div/div/form/div[3]/div[2]/div/div[2]/div/div/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "4,999"
+    }, {
+      "id": "2b05d45a-9522-47c2-8614-335d0084eb74",
+      "comment": "",
+      "command": "type",
+      "target": "id=stock",
+      "targets": [
+        ["id=stock", "id"],
+        ["css=#stock", "css:finder"],
+        ["xpath=//input[@id='stock']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/main/div/div/div/form/div[3]/div[3]/div/div[2]/div/div/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div[2]/div/div/div/div[2]/input", "xpath:position"]
+      ],
+      "value": "20"
+    }, {
+      "id": "0440c1f5-28c0-4d61-8a4d-3acf8773f660",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ant-btn-primary > span:nth-child(2)",
+      "targets": [
+        ["css=.ant-btn-primary > span:nth-child(2)", "css:finder"],
+        ["xpath=//div[@id='root']/div/main/div/div/div/form/div[4]/button/span[2]", "xpath:idRelative"],
+        ["xpath=//div[4]/button/span[2]", "xpath:position"],
+        ["xpath=//span[contains(.,'Save Product')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "799ec9f0-6afd-4c78-a9bc-9a1b1be2a31f",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.ant-message-custom-content > span:nth-child(2)",
+      "targets": [
+        ["css=.ant-message-custom-content > span:nth-child(2)", "css:finder"],
+        ["xpath=//body/div[2]/div/div/div/div/span[2]", "xpath:position"],
+        ["xpath=//span[contains(.,'Product saved and images uploaded successfully')]", "xpath:innerText"]
+      ],
+      "value": "Product saved and images uploaded successfully"
+    }]
+  }, {
+    "id": "328d5ab5-76b9-4888-8871-61f6227d7786",
+    "name": "Fail case",
+    "commands": [{
+      "id": "3cd9e37d-c055-440f-9beb-98c2cff8dffe",
+      "comment": "",
+      "command": "open",
+      "target": "/products/create",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6aacb49f-b29f-4500-918d-f75ab50e50d3",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1113x1019",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9637ce0d-5534-44c4-a11d-899a40fd1574",
+      "comment": "",
+      "command": "click",
+      "target": "id=categoryID",
+      "targets": [
+        ["id=categoryID", "id"],
+        ["css=#categoryID", "css:finder"],
+        ["xpath=//input[@id='categoryID']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/main/div/div/div/form/div[2]/div[3]/div/div[2]/div/div/div/div/span/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div[2]/div/div/div/div/span/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "be65f0af-d7db-49cc-92b8-285873240106",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ant-select-item-option-active",
+      "targets": [
+        ["css=.ant-select-item-option-active", "css:finder"],
+        ["xpath=//div/div/div[5]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ebdc4e24-2486-4083-94db-e9691dde1418",
+      "comment": "",
+      "command": "click",
+      "target": "css=.flex-grow",
+      "targets": [
+        ["css=.flex-grow", "css:finder"],
+        ["xpath=//div[@id='root']/div/main", "xpath:idRelative"],
+        ["xpath=//main", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "70e76451-8060-45bc-ac32-c6d73a7b8df0",
+      "comment": "",
+      "command": "type",
+      "target": "id=product_name",
+      "targets": [
+        ["id=product_name", "id"],
+        ["css=#product_name", "css:finder"],
+        ["xpath=//input[@id='product_name']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/main/div/div/div/form/div[2]/div[2]/div/div[2]/div/div/span/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/span/input", "xpath:position"]
+      ],
+      "value": "Nike Air Force 1"
+    }, {
+      "id": "e48592e0-a48e-4794-bb56-f2ccf82e3378",
+      "comment": "",
+      "command": "type",
+      "target": "id=description",
+      "targets": [
+        ["id=description", "id"],
+        ["css=#description", "css:finder"],
+        ["xpath=//textarea[@id='description']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/main/div/div/div/form/div[2]/div[5]/div/div[2]/div/div/span/textarea", "xpath:idRelative"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": "This is Nike shoes"
+    }, {
+      "id": "64a323b4-5d1b-42a9-a065-1c3e3f41c367",
+      "comment": "",
+      "command": "type",
+      "target": "id=price",
+      "targets": [
+        ["id=price", "id"],
+        ["css=#price", "css:finder"],
+        ["xpath=//input[@id='price']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/main/div/div/div/form/div[3]/div[2]/div/div[2]/div/div/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "4,999"
+    }, {
+      "id": "ad8f8d25-e76b-440c-8576-b15ae8f3eab0",
+      "comment": "",
+      "command": "type",
+      "target": "id=stock",
+      "targets": [
+        ["id=stock", "id"],
+        ["css=#stock", "css:finder"],
+        ["xpath=//input[@id='stock']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/main/div/div/div/form/div[3]/div[3]/div/div[2]/div/div/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div[2]/div/div/div/div[2]/input", "xpath:position"]
+      ],
+      "value": "20"
+    }, {
+      "id": "7724adc1-07dc-4808-a9ec-d758aa144e26",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ant-btn-primary > span:nth-child(2)",
+      "targets": [
+        ["css=.ant-btn-primary > span:nth-child(2)", "css:finder"],
+        ["xpath=//div[@id='root']/div/main/div/div/div/form/div[4]/button/span[2]", "xpath:idRelative"],
+        ["xpath=//div[4]/button/span[2]", "xpath:position"],
+        ["xpath=//span[contains(.,'Save Product')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "cb570fc1-e369-43a3-97f2-7f3c9b3f8c60",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.ant-message-custom-content > span:nth-child(2)",
+      "targets": [
+        ["css=.ant-message-custom-content > span:nth-child(2)", "css:finder"],
+        ["xpath=//div[3]/div/div/div/div/span[2]", "xpath:position"],
+        ["xpath=//span[contains(.,'Please upload at least one image')]", "xpath:innerText"]
+      ],
+      "value": "Please upload at least one image"
+    }]
+  }],
+  "suites": [{
+    "id": "510153f8-f0cb-417c-b6bb-da90e99c7ef6",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["1408af08-19b3-408b-ae1b-d8f5dac9a122"]
+  }],
+  "urls": ["http://localhost:5173/"],
+  "plugins": []
+}

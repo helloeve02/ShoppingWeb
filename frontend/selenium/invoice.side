@@ -1,0 +1,694 @@
+{
+  "id": "8fd00e77-8e84-4068-beaa-77cb2123a401",
+  "version": "2.0",
+  "name": "invoice",
+  "url": "http://localhost:5173/order/invoice",
+  "tests": [{
+    "id": "2158c207-43e4-4ae8-9b92-4afdc105e183",
+    "name": "Type required",
+    "commands": [{
+      "id": "65f24b8e-2def-44fb-943e-9988d76bc28b",
+      "comment": "",
+      "command": "open",
+      "target": "/order/invoice",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7da44a4a-0efb-4f51-8f9c-781268349766",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "974x1080",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "716d05ee-d55d-4793-b7e9-f76de4aa47fb",
+      "comment": "",
+      "command": "type",
+      "target": "id=basic_FullName",
+      "targets": [
+        ["id=basic_FullName", "id"],
+        ["css=#basic_FullName", "css:finder"],
+        ["xpath=//input[@id='basic_FullName']", "xpath:attributes"],
+        ["xpath=//form[@id='basic']/div[3]/div/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "Peerawich Punyano"
+    }, {
+      "id": "054ef9a5-6d02-48c6-b2b5-d885417cbf76",
+      "comment": "",
+      "command": "type",
+      "target": "id=basic_Email",
+      "targets": [
+        ["id=basic_Email", "id"],
+        ["css=#basic_Email", "css:finder"],
+        ["xpath=//input[@id='basic_Email']", "xpath:attributes"],
+        ["xpath=//form[@id='basic']/div[4]/div/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[4]/div/div[2]/div/div/input", "xpath:position"]
+      ],
+      "value": "newpeerawich1579@gmail.com"
+    }, {
+      "id": "428ef94e-4319-41ac-810e-377ef1e6ba70",
+      "comment": "",
+      "command": "type",
+      "target": "id=basic_TaxID",
+      "targets": [
+        ["id=basic_TaxID", "id"],
+        ["css=#basic_TaxID", "css:finder"],
+        ["xpath=//input[@id='basic_TaxID']", "xpath:attributes"],
+        ["xpath=//form[@id='basic']/div[5]/div/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[5]/div/div[2]/div/div/input", "xpath:position"]
+      ],
+      "value": "1231001231001"
+    }, {
+      "id": "93460fb7-2cd4-4c02-857d-64b63d8fcec5",
+      "comment": "",
+      "command": "click",
+      "target": "css=.hover\\3A bg-orange-600",
+      "targets": [
+        ["css=.hover\\3A bg-orange-600", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//form[@id='basic']/div[8]/button", "xpath:idRelative"],
+        ["xpath=//div[8]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Submit Request')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "5d5cb261-687f-43f6-9bb5-0de41f07b442",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=#basic_InvoiceTypeID_help > .ant-form-item-explain-error",
+      "targets": [
+        ["css=#basic_InvoiceTypeID_help > .ant-form-item-explain-error", "css:finder"],
+        ["xpath=//div[@id='basic_InvoiceTypeID_help']/div", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/div/div", "xpath:position"]
+      ],
+      "value": "Please select type!"
+    }]
+  }, {
+    "id": "e34157d9-aeab-40dc-be3a-de839ca66abf",
+    "name": "Full Name required",
+    "commands": [{
+      "id": "41a7bb82-20c8-4f8a-96b3-7c011595dd99",
+      "comment": "",
+      "command": "open",
+      "target": "/order/invoice",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0bb0aea2-ea04-49eb-89ae-6bacabf95ad4",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "974x1080",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "67b91d01-f57b-44ba-b7ea-0cd166be9d73",
+      "comment": "",
+      "command": "click",
+      "target": "id=basic_InvoiceTypeID",
+      "targets": [
+        ["id=basic_InvoiceTypeID", "id"],
+        ["css=#basic_InvoiceTypeID", "css:finder"],
+        ["xpath=//input[@id='basic_InvoiceTypeID']", "xpath:attributes"],
+        ["xpath=//form[@id='basic']/div[2]/div/div[2]/div/div/div/div/span/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0ed95ccb-6d44-43e0-99ec-335cc092231d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ant-select-item-option-active > .ant-select-item-option-content",
+      "targets": [
+        ["css=.ant-select-item-option-active > .ant-select-item-option-content", "css:finder"],
+        ["xpath=//div/div[2]/div/div/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "516f2fab-5ce1-4e56-8395-b22eb0738136",
+      "comment": "",
+      "command": "type",
+      "target": "id=basic_Email",
+      "targets": [
+        ["id=basic_Email", "id"],
+        ["css=#basic_Email", "css:finder"],
+        ["xpath=//input[@id='basic_Email']", "xpath:attributes"],
+        ["xpath=//form[@id='basic']/div[4]/div/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[4]/div/div[2]/div/div/input", "xpath:position"]
+      ],
+      "value": "newpeerawich1579@gmail.com"
+    }, {
+      "id": "95a6cc04-5aee-461a-9940-367f395a061b",
+      "comment": "",
+      "command": "type",
+      "target": "id=basic_TaxID",
+      "targets": [
+        ["id=basic_TaxID", "id"],
+        ["css=#basic_TaxID", "css:finder"],
+        ["xpath=//input[@id='basic_TaxID']", "xpath:attributes"],
+        ["xpath=//form[@id='basic']/div[5]/div/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[5]/div/div[2]/div/div/input", "xpath:position"]
+      ],
+      "value": "1231001231001"
+    }, {
+      "id": "d4bef32b-f805-4c73-bf25-9a7674211941",
+      "comment": "",
+      "command": "click",
+      "target": "css=.hover\\3A bg-orange-600",
+      "targets": [
+        ["css=.hover\\3A bg-orange-600", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//form[@id='basic']/div[8]/button", "xpath:idRelative"],
+        ["xpath=//div[8]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Submit Request')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "85731acf-7966-45fb-bbf3-340bb6f72643",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=#basic_FullName_help > .ant-form-item-explain-error",
+      "targets": [
+        ["css=#basic_InvoiceTypeID_help > .ant-form-item-explain-error", "css:finder"],
+        ["xpath=//div[@id='basic_InvoiceTypeID_help']/div", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/div/div", "xpath:position"]
+      ],
+      "value": "Please enter your full name!"
+    }]
+  }, {
+    "id": "5f24e039-4f0f-4454-a624-c44a9a986afb",
+    "name": "Email required",
+    "commands": [{
+      "id": "4bb175b8-eb6c-4e6b-bc8e-cc5a9f87c00a",
+      "comment": "",
+      "command": "open",
+      "target": "/order/invoice",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3fdac529-0b46-4570-bd67-b5c58300085a",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "974x1080",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "29d49945-c238-43d7-b68f-4cd2d28abf43",
+      "comment": "",
+      "command": "click",
+      "target": "id=basic_InvoiceTypeID",
+      "targets": [
+        ["id=basic_InvoiceTypeID", "id"],
+        ["css=#basic_InvoiceTypeID", "css:finder"],
+        ["xpath=//input[@id='basic_InvoiceTypeID']", "xpath:attributes"],
+        ["xpath=//form[@id='basic']/div[2]/div/div[2]/div/div/div/div/span/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d9448faa-9569-43d7-b2ab-379c7b9625d0",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ant-select-item-option-active > .ant-select-item-option-content",
+      "targets": [
+        ["css=.ant-select-item-option-active > .ant-select-item-option-content", "css:finder"],
+        ["xpath=//div/div[2]/div/div/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0292842b-9076-455b-9d7b-e797ac53bc16",
+      "comment": "",
+      "command": "type",
+      "target": "id=basic_FullName",
+      "targets": [
+        ["id=basic_FullName", "id"],
+        ["css=#basic_FullName", "css:finder"],
+        ["xpath=//input[@id='basic_FullName']", "xpath:attributes"],
+        ["xpath=//form[@id='basic']/div[3]/div/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "Peerawich Punyano"
+    }, {
+      "id": "03ae79e6-c0e4-47bc-b931-02ce9d41f239",
+      "comment": "",
+      "command": "type",
+      "target": "id=basic_TaxID",
+      "targets": [
+        ["id=basic_TaxID", "id"],
+        ["css=#basic_TaxID", "css:finder"],
+        ["xpath=//input[@id='basic_TaxID']", "xpath:attributes"],
+        ["xpath=//form[@id='basic']/div[5]/div/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[5]/div/div[2]/div/div/input", "xpath:position"]
+      ],
+      "value": "1231001231001"
+    }, {
+      "id": "201b6777-a8f3-4771-a087-aedbf67f39fc",
+      "comment": "",
+      "command": "click",
+      "target": "css=.hover\\3A bg-orange-600",
+      "targets": [
+        ["css=.hover\\3A bg-orange-600", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//form[@id='basic']/div[8]/button", "xpath:idRelative"],
+        ["xpath=//div[8]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Submit Request')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "db2c743f-05a5-4f6b-a1a8-f98848de809f",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=#basic_Email_help > .ant-form-item-explain-error",
+      "targets": [
+        ["css=#basic_InvoiceTypeID_help > .ant-form-item-explain-error", "css:finder"],
+        ["xpath=//div[@id='basic_InvoiceTypeID_help']/div", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/div/div", "xpath:position"]
+      ],
+      "value": "Please enter your email!"
+    }]
+  }, {
+    "id": "e390861f-2052-4d7e-9f37-3656bb7ea85b",
+    "name": "Success Case without record",
+    "commands": [{
+      "id": "f9ec6509-d880-4094-8ddc-81fef4b68233",
+      "comment": "",
+      "command": "open",
+      "target": "/order/invoice",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8dc66537-9100-4b5a-b4c5-352dda0cfc62",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "974x1080",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b030dd52-9912-4598-991d-681020d8ef1e",
+      "comment": "",
+      "command": "click",
+      "target": "id=basic_InvoiceTypeID",
+      "targets": [
+        ["id=basic_InvoiceTypeID", "id"],
+        ["css=#basic_InvoiceTypeID", "css:finder"],
+        ["xpath=//input[@id='basic_InvoiceTypeID']", "xpath:attributes"],
+        ["xpath=//form[@id='basic']/div[2]/div/div[2]/div/div/div/div/span/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8172d003-10a1-4160-9d4b-c28eef275af4",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ant-select-item-option-active > .ant-select-item-option-content",
+      "targets": [
+        ["css=.ant-select-item-option-active > .ant-select-item-option-content", "css:finder"],
+        ["xpath=//div/div[2]/div/div/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a02e67b0-dfd1-4f33-a2af-a54877a7016e",
+      "comment": "",
+      "command": "type",
+      "target": "id=basic_FullName",
+      "targets": [
+        ["id=basic_FullName", "id"],
+        ["css=#basic_FullName", "css:finder"],
+        ["xpath=//input[@id='basic_FullName']", "xpath:attributes"],
+        ["xpath=//form[@id='basic']/div[3]/div/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "Peerawich Punyano"
+    }, {
+      "id": "a0ef8040-910b-4ab8-b371-5187d7233c18",
+      "comment": "",
+      "command": "type",
+      "target": "id=basic_Email",
+      "targets": [
+        ["id=basic_Email", "id"],
+        ["css=#basic_Email", "css:finder"],
+        ["xpath=//input[@id='basic_Email']", "xpath:attributes"],
+        ["xpath=//form[@id='basic']/div[4]/div/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[4]/div/div[2]/div/div/input", "xpath:position"]
+      ],
+      "value": "newpeerawich1579@gmail.com"
+    }, {
+      "id": "846db680-cf0d-4fb8-94cb-ff9eb5cd3872",
+      "comment": "",
+      "command": "type",
+      "target": "id=basic_TaxID",
+      "targets": [
+        ["id=basic_TaxID", "id"],
+        ["css=#basic_TaxID", "css:finder"],
+        ["xpath=//input[@id='basic_TaxID']", "xpath:attributes"],
+        ["xpath=//form[@id='basic']/div[5]/div/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[5]/div/div[2]/div/div/input", "xpath:position"]
+      ],
+      "value": "1231001231001"
+    }, {
+      "id": "123843b8-eca0-4800-a65d-f8d8ae9c7407",
+      "comment": "",
+      "command": "click",
+      "target": "css=.hover\\3A bg-orange-600",
+      "targets": [
+        ["css=.hover\\3A bg-orange-600", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//form[@id='basic']/div[8]/button", "xpath:idRelative"],
+        ["xpath=//div[8]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Submit Request')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e627a1b4-620e-4f2e-b137-ff233c47e6f7",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.ant-message-custom-content > span:nth-child(2)",
+      "targets": [
+        ["css=.ant-message-custom-content > span:nth-child(2)", "css:finder"],
+        ["xpath=//div[3]/div/div/div/div/span[2]", "xpath:position"],
+        ["xpath=//span[contains(.,'Submit invoice request successfully!')]", "xpath:innerText"]
+      ],
+      "value": "Submit invoice request successfully!"
+    }]
+  }, {
+    "id": "23934d25-2465-4eb6-946d-8f2d61ef8013",
+    "name": "Tax ID less than 13 character",
+    "commands": [{
+      "id": "b7a11a67-779f-40ce-9f6e-e5b62a3d2478",
+      "comment": "",
+      "command": "open",
+      "target": "/order/invoice",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c4641b75-3c5d-4dd3-addd-8e6182ab7fa2",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "974x1080",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8a428786-cbb8-4c37-84c8-65d726b4ab3e",
+      "comment": "",
+      "command": "click",
+      "target": "id=basic_InvoiceTypeID",
+      "targets": [
+        ["id=basic_InvoiceTypeID", "id"],
+        ["css=#basic_InvoiceTypeID", "css:finder"],
+        ["xpath=//input[@id='basic_InvoiceTypeID']", "xpath:attributes"],
+        ["xpath=//form[@id='basic']/div[2]/div/div[2]/div/div/div/div/span/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7e7e0eb0-ad4a-4e05-baa1-5f26d106f7d2",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ant-select-item-option-active > .ant-select-item-option-content",
+      "targets": [
+        ["css=.ant-select-item-option-active > .ant-select-item-option-content", "css:finder"],
+        ["xpath=//div/div[2]/div/div/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f9faedb1-1735-432d-996d-cee5c07dc9e3",
+      "comment": "",
+      "command": "type",
+      "target": "id=basic_FullName",
+      "targets": [
+        ["id=basic_FullName", "id"],
+        ["css=#basic_FullName", "css:finder"],
+        ["xpath=//input[@id='basic_FullName']", "xpath:attributes"],
+        ["xpath=//form[@id='basic']/div[3]/div/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "Peerawich Punyano"
+    }, {
+      "id": "5fc935ba-162b-4d23-87d5-5aa78498dd69",
+      "comment": "",
+      "command": "type",
+      "target": "id=basic_Email",
+      "targets": [
+        ["id=basic_Email", "id"],
+        ["css=#basic_Email", "css:finder"],
+        ["xpath=//input[@id='basic_Email']", "xpath:attributes"],
+        ["xpath=//form[@id='basic']/div[4]/div/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[4]/div/div[2]/div/div/input", "xpath:position"]
+      ],
+      "value": "newpeerawich1579@gmail.com"
+    }, {
+      "id": "e4a061bf-5645-4d16-8165-9d57fea9b193",
+      "comment": "",
+      "command": "type",
+      "target": "id=basic_TaxID",
+      "targets": [
+        ["id=basic_TaxID", "id"],
+        ["css=#basic_TaxID", "css:finder"],
+        ["xpath=//input[@id='basic_TaxID']", "xpath:attributes"],
+        ["xpath=//form[@id='basic']/div[5]/div/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[5]/div/div[2]/div/div/input", "xpath:position"]
+      ],
+      "value": "12310012"
+    }, {
+      "id": "02e4809d-e5f2-415e-8fb2-8b6a7d841138",
+      "comment": "",
+      "command": "click",
+      "target": "css=.hover\\3A bg-orange-600",
+      "targets": [
+        ["css=.hover\\3A bg-orange-600", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//form[@id='basic']/div[8]/button", "xpath:idRelative"],
+        ["xpath=//div[8]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Submit Request')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "eeaf5d04-f0ed-4f43-b857-564ed5e6172e",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=#basic_TaxID_help > .ant-form-item-explain-error",
+      "targets": [
+        ["css=#basic_InvoiceTypeID_help > .ant-form-item-explain-error", "css:finder"],
+        ["xpath=//div[@id='basic_InvoiceTypeID_help']/div", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/div/div", "xpath:position"]
+      ],
+      "value": "Your Tax ID must be 13 characters"
+    }]
+  }, {
+    "id": "6f38e24c-f3bd-4aaf-808e-829952314d53",
+    "name": "Tax ID required",
+    "commands": [{
+      "id": "91316eb7-6993-4fc1-858b-ec213ac9c8dd",
+      "comment": "",
+      "command": "open",
+      "target": "/order/invoice",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "87cb64d5-570b-43a8-a438-4310fab35d5b",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "974x1080",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d188f7ab-66f3-4d6c-ae4a-724b4eefb40b",
+      "comment": "",
+      "command": "click",
+      "target": "id=basic_InvoiceTypeID",
+      "targets": [
+        ["id=basic_InvoiceTypeID", "id"],
+        ["css=#basic_InvoiceTypeID", "css:finder"],
+        ["xpath=//input[@id='basic_InvoiceTypeID']", "xpath:attributes"],
+        ["xpath=//form[@id='basic']/div[2]/div/div[2]/div/div/div/div/span/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c545d399-afd3-4ff0-bb54-6c25784233c3",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ant-select-item-option-active > .ant-select-item-option-content",
+      "targets": [
+        ["css=.ant-select-item-option-active > .ant-select-item-option-content", "css:finder"],
+        ["xpath=//div/div[2]/div/div/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "641f3d48-46a4-452d-ad0b-3c05ee2b42f5",
+      "comment": "",
+      "command": "type",
+      "target": "id=basic_FullName",
+      "targets": [
+        ["id=basic_FullName", "id"],
+        ["css=#basic_FullName", "css:finder"],
+        ["xpath=//input[@id='basic_FullName']", "xpath:attributes"],
+        ["xpath=//form[@id='basic']/div[3]/div/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "Peerawich Punyano"
+    }, {
+      "id": "227e6e6d-e7e0-4032-a5d6-6544ce6b4e5f",
+      "comment": "",
+      "command": "type",
+      "target": "id=basic_Email",
+      "targets": [
+        ["id=basic_Email", "id"],
+        ["css=#basic_Email", "css:finder"],
+        ["xpath=//input[@id='basic_Email']", "xpath:attributes"],
+        ["xpath=//form[@id='basic']/div[4]/div/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[4]/div/div[2]/div/div/input", "xpath:position"]
+      ],
+      "value": "newpeerawich1579@gmail.com"
+    }, {
+      "id": "7634ee05-66fb-4d60-967c-2aa572392ce2",
+      "comment": "",
+      "command": "click",
+      "target": "css=.hover\\3A bg-orange-600",
+      "targets": [
+        ["css=.hover\\3A bg-orange-600", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//form[@id='basic']/div[8]/button", "xpath:idRelative"],
+        ["xpath=//div[8]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Submit Request')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ac210d5d-9937-4731-8f6c-97f5fbc10d27",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=#basic_TaxID_help > .ant-form-item-explain-error",
+      "targets": [
+        ["css=#basic_InvoiceTypeID_help > .ant-form-item-explain-error", "css:finder"],
+        ["xpath=//div[@id='basic_InvoiceTypeID_help']/div", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/div/div", "xpath:position"]
+      ],
+      "value": "Please enter your tax id!"
+    }]
+  }, {
+    "id": "2d272de3-605b-43d4-9a6d-33701e87540c",
+    "name": "Success Case with record",
+    "commands": [{
+      "id": "b18e67cb-4097-4cb8-916d-70916d4b60f7",
+      "comment": "",
+      "command": "open",
+      "target": "/order/invoice",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2a82c96f-adb6-42e5-a189-375ad026c5fb",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "974x1080",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "60954bee-4b5d-40af-8d6d-1e0f1fed9e80",
+      "comment": "",
+      "command": "click",
+      "target": "id=basic_InvoiceTypeID",
+      "targets": [
+        ["id=basic_InvoiceTypeID", "id"],
+        ["css=#basic_InvoiceTypeID", "css:finder"],
+        ["xpath=//input[@id='basic_InvoiceTypeID']", "xpath:attributes"],
+        ["xpath=//form[@id='basic']/div[2]/div/div[2]/div/div/div/div/span/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a639101e-b665-49ae-a463-09953c7dd910",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ant-select-item-option-active > .ant-select-item-option-content",
+      "targets": [
+        ["css=.ant-select-item-option-active > .ant-select-item-option-content", "css:finder"],
+        ["xpath=//div/div[2]/div/div/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "54939674-a10f-43a0-9013-be32a02ddc5b",
+      "comment": "",
+      "command": "type",
+      "target": "id=basic_FullName",
+      "targets": [
+        ["id=basic_FullName", "id"],
+        ["css=#basic_FullName", "css:finder"],
+        ["xpath=//input[@id='basic_FullName']", "xpath:attributes"],
+        ["xpath=//form[@id='basic']/div[3]/div/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "Peerawich Punyano"
+    }, {
+      "id": "45735759-bf79-4e91-9d9b-7a5cdadc1396",
+      "comment": "",
+      "command": "type",
+      "target": "id=basic_Email",
+      "targets": [
+        ["id=basic_Email", "id"],
+        ["css=#basic_Email", "css:finder"],
+        ["xpath=//input[@id='basic_Email']", "xpath:attributes"],
+        ["xpath=//form[@id='basic']/div[4]/div/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[4]/div/div[2]/div/div/input", "xpath:position"]
+      ],
+      "value": "newpeerawich1579@gmail.com"
+    }, {
+      "id": "637301d4-abe4-496e-ad91-65f939260b1c",
+      "comment": "",
+      "command": "type",
+      "target": "id=basic_TaxID",
+      "targets": [
+        ["id=basic_TaxID", "id"],
+        ["css=#basic_TaxID", "css:finder"],
+        ["xpath=//input[@id='basic_TaxID']", "xpath:attributes"],
+        ["xpath=//form[@id='basic']/div[5]/div/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[5]/div/div[2]/div/div/input", "xpath:position"]
+      ],
+      "value": "1231001231001"
+    }, {
+      "id": "40f6bb07-cdf6-4ade-a394-7557bd6d151e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ant-switch-inner",
+      "targets": [
+        ["css=.ant-switch-inner", "css:finder"],
+        ["xpath=//button[@id='basic_Record']/span", "xpath:idRelative"],
+        ["xpath=//div[6]/div/div[2]/div/div/button/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "179fb810-fde5-4e43-9d08-6445e4e7730a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.hover\\3A bg-orange-600",
+      "targets": [
+        ["css=.hover\\3A bg-orange-600", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//form[@id='basic']/div[8]/button", "xpath:idRelative"],
+        ["xpath=//div[8]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Submit Request')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "314985b0-4e09-42b6-9b82-603e8b814986",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.ant-message-custom-content > span:nth-child(2)",
+      "targets": [
+        ["css=.ant-message-custom-content > span:nth-child(2)", "css:finder"],
+        ["xpath=//div[3]/div/div/div/div/span[2]", "xpath:position"],
+        ["xpath=//span[contains(.,'Submit invoice request successfully!')]", "xpath:innerText"]
+      ],
+      "value": "Submit invoice request successfully!"
+    }]
+  }],
+  "suites": [{
+    "id": "6dce1e50-bdc6-4680-b34d-041b417ee669",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }],
+  "urls": ["http://localhost:5173/", "http://localhost:5173/order/invoice"],
+  "plugins": []
+}

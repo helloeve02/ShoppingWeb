@@ -1,0 +1,86 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #ff7f50;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden; /* ป้องกันการเลื่อน */
+}
+
+.SignUp-container {
+  display: flex;
+  width: 100%;
+  max-width: 1200px;
+  background-color: white;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.SignUp-left {
+  background-color: #ffffff;
+  color: white;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+}
+
+.logo img {
+  width: 100%; /* ทำให้ภาพปรับตาม container */
+  height: 100%; /* รักษาสัดส่วน */
+  max-width: 760px; /* จำกัดความกว้าง */
+}
+
+.SignUp-right {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+}
+
+.SignUp-right h2 {
+  font-size: 36px; /* ลดขนาดหัวข้อ */
+  margin-bottom: 20px; /* ลด margin */
+}
+
+.SignUp-form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 400px;
+}
+
+.SignUp-input {
+  padding: 0.5rem;
+}
+
+.SignUp-button {
+  padding: 1rem;
+  width: 100%;
+  background-color: #ff7043;
+  color: white;
+}
+
+button:hover {
+  background-color: #e6673f; /* เพิ่มเอฟเฟกต์ hover */
+}
+
+.signin-link a {
+  color: #ff7043;
+  text-decoration: none;
+}
+
+.signin-link a:hover {
+  text-decoration: underline;
+}
